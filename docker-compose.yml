@@ -1,0 +1,36 @@
+version: "3.18"
+services:
+
+  node1:
+    image: btcs
+    container_name: node1
+    environment:
+      NODE_ADDR: node1:3000
+    command: ./init.sh -m -d
+    ports:
+      - 3000:3000
+    networks:
+      - p2p
+
+  node2:
+    image: btcs
+    container_name: node2
+    environment:
+      NODE_ADDR: node2:4000
+    ports:
+      - 4000:4000
+    networks:
+      - p2p
+      
+  node3:
+    image: btcs
+    container_name: node3
+    environment:
+      NODE_ADDR: node3:5000
+    ports:
+      - 5000:5000
+    networks:
+      - p2p
+
+networks:
+  p2p:
