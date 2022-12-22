@@ -1,3 +1,4 @@
+
 # btcs
 
 Simplified Bitcoin implementation, for educational purposes.
@@ -13,7 +14,7 @@ Simplified Bitcoin implementation, for educational purposes.
 - Hierarchical deterministic wallet (BIP32)
 - Mnemonic phrases (BIP39)
 
-## Usage
+## Quickstart
 
 ```sh
 # Start network
@@ -29,6 +30,10 @@ btcs wallet getnewaddress satoshi
 docker exec -it node1 sh
 btcs sendtx satoshi --to <node2 address> --amount <amount>
 ```
+
+## Usage
+
+![btcs](https://user-images.githubusercontent.com/51374959/209243671-8f61cb6d-742c-4cf5-bf4f-b584029b7f09.png)
 
 ### Chain parameters
 
